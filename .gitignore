@@ -1,0 +1,11 @@
+data_cache/
+DATASET/
+results_selftest/
+results_quick/
+results_v2/
+results_combined/
+**/checkpoints/
+**/pysr_runs/
+*.tmp
+.ipynb_checkpoints/
+__pycache__/
