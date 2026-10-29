@@ -1,0 +1,6 @@
+fold,setting,complexity,val_RMSE,equation
+0,"{'maxsize': 35, 'parsimony': 0.0}",29,9.822318298165875,S_mix/(1.13189287385581e-6*hmean_p**3 + exp(-1.0281444)/mean_p) + gmean_p - (-0.022495368*S_mix**3*mean_p + (gmean_p**2 + var_p*0.19490303)*0.0021022186)
+1,"{'maxsize': 30, 'parsimony': 1e-05}",22,9.22372099079604,(2.075691 + hmean_p*(-0.005612202))*(S_mix*8.918182 + gmean_p + mean_p*(-1*0.39869457 + 292.121354867364/hmean_p**2) - 1*14.174566)
+2,"{'maxsize': 35, 'parsimony': 0.0}",27,10.04571627313303,4.98427188086633*S_mix**3 + 4.98427188086633*mean_p/(1.17068419358461e-8*hmean_p**6 + 5.541214) - sqrt(var_p/gmean_p) + 4.98427188086633*log(gmean_p)**2 - 22.659266
+3,"{'maxsize': 30, 'parsimony': 1e-05}",25,10.08124671402052,gmean_p**2*(0.0049971743 - 1.5787133e-5*gmean_p) + (S_mix + gmean_p/hmean_p - 0.008377567*sqrt(var_p) + 0.63871855)**3 + 36.337414
+4,"{'maxsize': 30, 'parsimony': 1e-05}",25,9.052636070515275,(9.276437 + mean_p/1.1094366**hmean_p)*(S_mix*(2.4901161 - sqrt(1.053298**gmean_p + var_p)/gmean_p) + sqrt(gmean_p)) - 27.724052

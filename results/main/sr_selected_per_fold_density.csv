@@ -1,0 +1,6 @@
+fold,setting,complexity,val_RMSE,equation
+0,"{'maxsize': 30, 'parsimony': 1e-05}",19,0.18070642854421037,sqrt(sqrt(S_mix*(12.7793504162171 - 4.9751043*mean_p)**2 + var_p*(exp(S_mix) + 4.382927)) + 4.382927)
+1,"{'maxsize': 30, 'parsimony': 1e-05}",23,0.18707495352064385,sqrt(sqrt(S_mix) + var_p + sqrt(gmean_p*(2.500767 - gmean_p)**2*(S_mix**var_p + 0.24650942)) + 0.90377927) + 0.90953046
+2,"{'maxsize': 35, 'parsimony': 0.0}",19,0.18422628232062443,(sqrt(sqrt(S_mix) + 0.14479378)*(gmean_p + sqrt(var_p + (mean_p - 1.2244631)**(-4.992854)))**3)**(1/4)
+3,"{'maxsize': 35, 'parsimony': 0.0}",23,0.1880639511729094,mean_p + sqrt(S_mix + mean_p/(hmean_p - 1.7815558) - 0.388097514933992*var_p + var_p**3/hmean_p**var_p) - 2.2579668
+4,"{'maxsize': 35, 'parsimony': 0.0}",23,0.18645615508523958,exp(sqrt(mean_p/(0.22446764**S_mix + 2.2259247) - 0.75632143/(mean_p + (var_p + 2337.27317614511/mean_p**9)**4)))
