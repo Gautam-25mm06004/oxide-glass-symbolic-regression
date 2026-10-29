@@ -72,6 +72,35 @@ The datasets are **not redistributed here**. The notebooks download them from th
 - **ZrO column.** The dataset column `ZrO` is interpreted as ZrO₂.
 - **Short-equation selection.** The short equations were chosen after inspecting the Pareto fronts, so treat them as a sensitivity analysis.
 
+## Acknowledgements and sources
+
+This project builds directly on the following paper and the data and code its authors made public:
+
+> Zeyu Kang, Longjun Wang, Xinyu Li, Wenkai Gao, Xianzhuo Dong, Jinchang Li, Yi Cao, Yunlong Yue, Junfeng Kang,
+> "Interpretable machine learning accelerates development of high-specific modulus glass",
+> *Computational Materials Science* **246** (2025) 113482. doi:[10.1016/j.commatsci.2024.113482](https://doi.org/10.1016/j.commatsci.2024.113482)
+> Code and data: [github.com/kzzzynobad/High-Specific-Modulus-Glass](https://github.com/kzzzynobad/High-Specific-Modulus-Glass)
+
+**What this project takes from that work:**
+- **Datasets.** The cleaned Young's modulus, density and liquidus-temperature datasets (17 oxides). They are downloaded from the authors' repository and not redistributed here. The authors built them from the **SciGlass** database, accessed through **GlassPy** (D.R. Cassar, *Ceram. Int.* 49 (2023) 36013–36024, doi:[10.1016/j.ceramint.2023.08.281](https://doi.org/10.1016/j.ceramint.2023.08.281)).
+- **Choice of oxides and properties.** The same 17 oxides and the same three target properties.
+- **Benchmark models.** The paper's tuned models were retrained inside our cross-validation, so the comparison is on equal terms. These are random forests for Young's modulus and density and XGBoost for liquidus temperature, with hyperparameters from the authors' code.
+- **Experimental glass.** The composition 59SiO₂–16.5Al₂O₃–10CaO–14.5MgO (mol%) and its measured density (2.641 g/cm³) and Young's modulus (93.6 GPa), used in `combined_property_check.ipynb`.
+- **CaO–MgO–Al₂O₃–SiO₂ design space** and the specific-modulus (E/ρ) target, both following the paper.
+
+**Pure-oxide property values** in `pure_oxide_properties.csv` come from:
+- *CRC Handbook of Chemistry and Physics*, 85th ed. (densities, melting points);
+- IUPAC 1982 recommended melting points of refractory oxides;
+- NISTIR 6853 (elastic moduli of ceramics) and the original measurements it cites;
+- Rouxel, *J. Am. Ceram. Soc.* 90 (2007) 3019; Speziale *et al.*, *J. Geophys. Res.* 111 (2006); Johnson, Thrasher & Kearney, *J. Appl. Phys.* 41 (1970) 427; Chang & Graham, *J. Geophys. Res.* 80 (1975) 2595; Zou *et al.*, *iScience* 28 (2025) 111905;
+- de Jong *et al.*, *Sci. Data* 2 (2015) 150009 (Materials Project DFT elastic constants).
+
+The exact source of every value is given in the CSV.
+
+**Software:** PySR (M. Cranmer, arXiv:2305.01582), XGBoost, Optuna, scikit-learn, pandas, NumPy, SymPy, Matplotlib.
+
+If you use this repository, please also cite Kang *et al.* (2025) and the SciGlass/GlassPy sources above.
+
 ## Related work
 
 - Hu *et al.*, *npj Comput. Mater.* 6 (2020) 25: composition-weighted (Hölder-mean) descriptors for densities and elastic moduli of SiO₂-based glasses.
