@@ -32,9 +32,9 @@ Because only one literature value per oxide is needed, an equation in these desc
 
 Short equations (constants fitted on all data, `results/main/short_equations_cv.csv`):
 
-- Young's modulus: $E = (2.443\,S_{mix}\,\overline{E}_{geo} + 214.5)^{0.709}$
-- Density: $\rho = \overline{\rho} + 3.857/\overline{\rho}_{harm} - 1.612$
-- Liquidus temperature: $T_{liq} = \overline{T}_m + \sqrt{S_{mix}}\,(-1216 + 1.179\times10^6/\overline{T}_{m,geo})$
+- Young's modulus: $`E = (2.443\,S_{mix}\,\overline{E}_{geo} + 214.5)^{0.709}`$
+- Density: $`\rho = \overline{\rho} + 3.857/\overline{\rho}_{harm} - 1.612`$
+- Liquidus temperature: $`T_{liq} = \overline{T}_m + \sqrt{S_{mix}}\,(-1216 + 1.179\times10^6/\overline{T}_{m,geo})`$
 
 The bars mark composition-weighted means: no subscript for the arithmetic mean, *geo* for the geometric mean, *harm* for the harmonic mean.
 
