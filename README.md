@@ -1,5 +1,7 @@
 # Interpretable composition-descriptor equations for oxide glasses
 
+**Status: work in progress.** This is an ongoing project. The results and equations here are preliminary and will be updated as the work continues.
+
 Symbolic-regression equations for **Young's modulus**, **density** and **liquidus temperature** of oxide glasses. They are built from five general descriptors of each composition, and benchmarked carefully against the machine-learning models of
 
 > Z. Kang *et al.*, "Interpretable machine learning accelerates development of high-specific modulus glass",
